@@ -13,7 +13,7 @@
 [![Website](https://img.shields.io/badge/🌐_Website-storesdz.com-0ea5e9?style=for-the-badge)](https://storesdz.com)
 [![API](https://img.shields.io/badge/⚡_API-api.storesdz.com-6366f1?style=for-the-badge)](https://api.storesdz.com)
 [![Status](https://img.shields.io/badge/Status-Building_in_Public-22c55e?style=for-the-badge)](https://github.com/storesdz)
-[![Made in](https://img.shields.io/badge/Made_in-Algeria_🇩🇿-d21034?style=for-the-badge)](https://storesdz.com)
+[![Made in](https://img.shields.io/badge/Made_in-Algeria-d21034?style=for-the-badge)](https://storesdz.com)
 
 </div>
 
