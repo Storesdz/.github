@@ -7,29 +7,23 @@ GitHub displays `profile/README.md` from the default branch of the public
 Edit that file and merge or push the change to `main` to publish it. Keep links
 publicly accessible; most platform repositories are private.
 
-## Activity chart
+## Screenshots
 
-`profile/activity.svg` is generated from the GitHub API using Node.js 22 with no
-dependencies. It counts commits on the default branches of public, non-fork,
-non-empty StoresDZ repositories over the last 365 UTC dates, including today.
-Identical commit SHAs are counted once across repositories. Automated commits
-authored by `github-actions[bot]` are excluded so chart refreshes do not inflate
-activity. This is a public commit chart, not GitHub's user contribution calendar;
-issues, reviews, other branches and private work are not counted.
+The profile's images are committed in `profile/images/` as WebP files so they
+load directly from this repository. No external screenshot service is required.
 
-The `Public activity chart` workflow tests the generator on pull requests and
-refreshes the image daily at 06:23 UTC, on generator changes to `main`, or when
-run manually from Actions. It uses the built-in `GITHUB_TOKEN`; no personal token
-or access to private repositories is needed. API errors fail the run before
-replacing the existing chart. The image includes its last successful update date.
+| Image | Source | Captured |
+| --- | --- | --- |
+| `storesdz-home.webp` | https://app.storesdz.com/ | 2026-10-21 |
+| `air-department.webp` | https://dzvelte.storesdz.com/f/air-dept-live-off-script | 2026-10-20 |
+| `matte-ink.webp` | https://dzvelte.storesdz.com/f/matte-ink-make-your-mark | 2026-10-20 |
+| `dedica.webp` | https://dzvelte.storesdz.com/f/dedica-everyday-espresso | 2026-10-20 |
+| `quechua.webp` | https://dzvelte.storesdz.com/f/quechua-100-stay-a-little-longer | 2026-10-20 |
 
-To check or refresh locally from this repository:
+All captures are 1440 × 1000. The funnel images reuse the screenshots displayed
+on the StoresDZ website. They contain public demo content, with no account or
+customer data. Product names and photography belong to their respective brands.
 
-```sh
-node --test .github/scripts/activity.test.mjs
-node .github/scripts/activity.mjs
-```
-
-An optional `GITHUB_TOKEN` environment variable raises the API rate limit. Never
-commit a token. GitHub may delay scheduled runs or disable them after prolonged
-repository inactivity; the workflow can also be run manually.
+Refresh an image when its source page changes, then check the organization
+profile at desktop and phone widths. Keep descriptive alt text and a link to
+each source page. The contribution chart and its refresh automation were removed.
